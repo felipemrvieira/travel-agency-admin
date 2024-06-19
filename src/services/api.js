@@ -13,3 +13,13 @@ export const getAgencies = async () => {
         throw error;
     }
 };
+
+export const createAgency = async (agencyData) => {
+    try {
+        const response = await api.post("/agencies", agencyData);
+        return response.data;
+    } catch (error) {
+        console.error("Failed to create agency:", error);
+        throw error;
+    }
+};
