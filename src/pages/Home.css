@@ -1,0 +1,65 @@
+.bg {
+    margin: 0;
+    padding: 0;
+    background: url("../assets/gradient.webp") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50%;
+}
+
+.text-content {
+    color: #fff;
+    text-align: left;
+}
+
+.title {
+    font-family: "Playwrite IS", cursive !important;
+}
+
+.destaque {
+    /* color: yellow; */
+}
+
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+}
